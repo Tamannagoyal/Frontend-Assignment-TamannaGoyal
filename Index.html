@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System with Adjustable Speeds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls-container">
+        <div id="speed-controls">
+            <h3>Planet Speed Controls</h3>
+            <div class="speed-control">
+                <label for="mercury-speed">Mercury:</label>
+                <input type="range" id="mercury-speed" min="0" max="5" step="0.1" value="2">
+                <span id="mercury-value">2</span>
+            </div>
+            <div class="speed-control">
+                <label for="venus-speed">Venus:</label>
+                <input type="range" id="venus-speed" min="0" max="5" step="0.1" value="1.5">
+                <span id="venus-value">1.5</span>
+            </div>
+            <div class="speed-control">
+                <label for="earth-speed">Earth:</label>
+                <input type="range" id="earth-speed" min="0" max="5" step="0.1" value="1">
+                <span id="earth-value">1</span>
+            </div>
+            <div class="speed-control">
+                <label for="mars-speed">Mars:</label>
+                <input type="range" id="mars-speed" min="0" max="5" step="0.1" value="0.8">
+                <span id="mars-value">0.8</span>
+            </div>
+            <div class="speed-control">
+                <label for="jupiter-speed">Jupiter:</label>
+                <input type="range" id="jupiter-speed" min="0" max="5" step="0.1" value="0.7">
+                <span id="jupiter-value">0.7</span>
+            </div>
+            <div class="speed-control">
+                <label for="saturn-speed">Saturn:</label>
+                <input type="range" id="saturn-speed" min="0" max="5" step="0.1" value="0.6">
+                <span id="saturn-value">0.6</span>
+            </div>
+            <div class="speed-control">
+                <label for="uranus-speed">Uranus:</label>
+                <input type="range" id="uranus-speed" min="0" max="5" step="0.1" value="0.5">
+                <span id="uranus-value">0.5</span>
+            </div>
+            <div class="speed-control">
+                <label for="neptune-speed">Neptune:</label>
+                <input type="range" id="neptune-speed" min="0" max="5" step="0.1" value="0.4">
+                <span id="neptune-value">0.4</span>
+            </div>
+        </div>
+        
+        <button id="pause-btn" class="control-btn">⏸ Pause</button>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
